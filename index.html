@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+  <div class="text-container">
+    <center> <h1> <font color=white  size=18> HTMLhints Form Contest</font> <h1></center>
+   </div>
+
+<div class="wrapper">
+    <div class="title">
+      Registration Form
+    </div>
+    <div class="form">
+      <form>
+       <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" class="input" required>
+       </div>  
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" class="input" required>
+       </div>  
+       <div class="inputfield">
+          <label>Password</label>
+          <input type="password" id="password1" class ="input"  onkeyup='check();'>
+       </div>  
+      <div class="inputfield">
+          <label>Confirm Password</label>
+          <input type="password" id="confirm_password1" onkeyup='check();' class="input" >
+       </div> 
+        <div class="inputfield">
+          <label>Gender</label>
+          <div class="custom_select">
+            <select>
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+       </div> 
+        <div class="inputfield">
+          <label for="maill">Email Address</label>
+          <input type="email" pattern="[^ @]*@[^ @]*" class="input" id="maill" required>
+       </div> 
+      <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" class="input" required>
+       </div> 
+      <div class="inputfield">
+          <label>Address</label>
+          <textarea class="textarea" required></textarea>
+       </div> 
+      <div class="inputfield">
+          <label>Postal Code</label>
+          <input type="text" class="input" required>
+       </div> 
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox" checked>
+            <span class="checkmark"></span>
+          </label>
+          <p>Agreed to terms and conditions</p>
+       </div> 
+      <div class="inputfield">
+        <button type="submit" value="Register" class="btn">Register</button>
+      </div>
+    </div>
+  </form>
+</div>	
+	<footer>
+   <font size=2 color=grey>Submission by Chaitanya Galande</font>
+	</footer>
+</body>
+</html>
